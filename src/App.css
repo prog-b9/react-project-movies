@@ -6,50 +6,10 @@
   align-items: center;
   transition: 0.3s;
 }
-/* .img-movies-error{
-  width: 100px;
-  height: 100px;
-} */
 
 #container-card {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-
-/* #container-card {
-  position: relative;
-  cursor: pointer;
-
-}
-
-#container-card:hover {
-  transition: 0.3s;
-
-}
-
-#container-card #card-details {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s;
-  scale: 0;
-  background-color: rgba(0, 0, 0, 0.639);
-  width: 0%;
-  height: 0%;
-}
-
-#container-card:hover #card-details {
-  width: 100%;
-  height: 100%;
-  scale: 1;
-  transition: 0.5s;
-
-} */
 
 @media (max-width:576px) {
   #img-movies {

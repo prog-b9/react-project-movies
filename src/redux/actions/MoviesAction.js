@@ -8,7 +8,7 @@ export const getAllMovies = () => {
     await axios
       .get(moviesApi)
       .then((response) => {
-        // console.log(response.data.results);
+       
         // here send data to Movies reducer
         returnData({ type: allMovies, data: [response.data.results] });
       })

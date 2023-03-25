@@ -9,11 +9,9 @@ export default function MoviesList() {
   const [isLoadingOneonly, setIsLoadingOneonly] = useState(true);
 
   const myDispatch = useDispatch();
-  // console.log(myData[0]);
 
   useEffect(() => {
     myDispatch(getAllMovies());
-    // console.log(myData);
     if (isLoadingOneonly) {
       setTimeout(() => {
         setIsLoading(!isLoading);
@@ -26,7 +24,7 @@ export default function MoviesList() {
     <div>
       <div className="row m-auto  row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4  row-cols-md-3  my-5 g-3  container">
         {/* Start Movies List  */}
-        {/* {dataMovies.length >= 1 ? ( */}
+
         {myData &&
           myData.map((item, i) =>
             isLoading === false ? (
@@ -41,7 +39,6 @@ export default function MoviesList() {
                     id="img-movies"
                   ></div>
                   <div className="card-body rounded-bottom p-3">
-                    {/* <div className="card-title placeholder-glow"></div> */}
                     <p className="card-text placeholder-glow">
                       <span className="placeholder placeholder-lg rounded-1 col-10"></span>
                       <span className="placeholder placeholder-sm rounded-1 col-6"></span>
@@ -92,9 +89,6 @@ export default function MoviesList() {
               </div>
             )
           )}
-
-        {/* <button onClick={() => setIsLoading(!isLoading)}>show api</button> */}
-
         {/* End Movies List  */}
       </div>
     </div>
